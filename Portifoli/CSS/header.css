@@ -1,11 +1,42 @@
+header{
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Logos, .navigation{
+    display: flex;
+    gap: 10px;
+}
+
+
 ul{
     list-style: none;
     padding: 0;
 }
 
 .Logo{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 
-  
+    background-color: black;
+    fill: white;
+    border-radius: 80%;
+
+    transition: 0.2s;
 }
+
+.Logo:hover{
+    width: 55px;
+    height: 55px;
+}
+
+#Instagram:hover{
+    fill: #E1366C;
+}
+
+
+
