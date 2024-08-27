@@ -18,11 +18,21 @@ header{
 
     font-size: 150%;
 
-    text-shadow: 0 0 5px rgba(255, 255, 255, 10), /* Brilho suave */
-    0 0 10px rgba(255, 255, 255, 5), /* Brilho mais intenso */
-    0 0 15px rgba(255, 255, 255, 1); /* Brilho adicional */
+    text-shadow: 0 0 1px rgba(255, 255, 255, 10), /* Brilho suave */
+                 0 0 5px rgba(255, 255, 255, 5), /* Brilho mais intenso */
+                 0 0 10px rgba(255, 255, 255, 1); /* Brilho adicional */
 
     color: var(--cor-letra); /* Cor do texto */
+
+    animation: shrine 4s infinite;
+}
+
+@keyframes shrine{
+    50%{
+    text-shadow: 0 0 15px rgba(255, 255, 255, 10), /* Brilho suave */
+                 0 0 20px rgba(255, 255, 255, 5), /* Brilho mais intenso */
+                 0 0 25px rgba(255, 255, 255, 1); /* Brilho adicional */
+    }
 }
 
 
@@ -45,12 +55,12 @@ header{
 
 .navigation a:hover{
     text-shadow: 0 0 5px rgba(255, 255, 255, 10), /* Brilho suave */
-    0 0 10px rgba(255, 255, 255, 5), /* Brilho mais intenso */
-    0 0 15px rgba(255, 255, 255, 1); /* Brilho adicional */
+                 0 0 10px rgba(255, 255, 255, 5), /* Brilho mais intenso */
+                 0 0 15px rgba(255, 255, 255, 1); /* Brilho adicional */
 
     color: var(--cor-letra); /* Cor do texto */
 
-
+  
    
 }
 
@@ -111,7 +121,6 @@ ul{
 #Linkedin:hover{
     fill: #0e76a8 ;
 }
-
 
 
 
