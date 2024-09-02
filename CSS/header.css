@@ -17,6 +17,7 @@ header{
 .title{
 
     font-size: 150%;
+    z-index: 1;
 
     text-shadow: 0 0 1px rgba(255, 255, 255, 10), /* Brilho suave */
                  0 0 5px rgba(255, 255, 255, 5), /* Brilho mais intenso */
@@ -58,10 +59,10 @@ header{
                  0 0 10px rgba(255, 255, 255, 5), /* Brilho mais intenso */
                  0 0 15px rgba(255, 255, 255, 1); /* Brilho adicional */
 
+    
+
     color: var(--cor-letra); /* Cor do texto */
 
-  
-   
 }
 
 
@@ -123,7 +124,26 @@ ul{
 }
 
 
+#Energy{
+    background-color: aliceblue;
+    border-radius: 100%;
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    opacity: 100;
+    z-index: 0;
 
+    animation: lightingEnergy 0.5s infinite;
+}
+
+@keyframes lightingEnergy {
+
+    50%{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 10), /* Brilho suave */
+                 0 0 20px rgba(255, 255, 255, 5), /* Brilho mais intenso */
+                 0 0 25px rgba(255, 255, 255, 1); /* Brilho adicional */
+    }
+}
 
 
 
