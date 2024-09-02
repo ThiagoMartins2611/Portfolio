@@ -1,18 +1,22 @@
-export class BeamLight{
+export class Energy{
     constructor(){
         this.velocity;
-        this.color;
         this.width;
         this.height;
     }
 
-    create(height, width, color){
-       let beam = document.createElement('div')
+    create(height, width){
+        this.width = width;
+        this.height = height;
+
+       let energy = document.createElement('div')
     
-       beam.id = "beam"
-
-
-       
+       energy.id = "Energy"
+       energy.style.height = this.height + "px"
+       energy.style.width = this.width + "px"
+      
     }
+
+
 
 }
