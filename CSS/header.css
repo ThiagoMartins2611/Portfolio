@@ -16,14 +16,9 @@ header{
 }
 
 .title{
-
     font-size: 150%;
-    z-index: 1;
-
-    
+    z-index: 2;
     color: var(--cor-letra); /* Cor do texto */
-
-    animation: shrine 4s infinite;
 }
 
 
@@ -31,7 +26,6 @@ header{
 .navigation{
     display: flex;
     gap: 20px;
-
     transition: 0.15s;
 }
 
@@ -134,13 +128,15 @@ ul{
     left: 0;
     top: 0;
 
+    z-index: 1;
+
     display: none;
     backdrop-filter: blur(10px);
 }
 
 .configsvg{
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 .configsvg svg{

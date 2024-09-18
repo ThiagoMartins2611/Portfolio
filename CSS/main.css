@@ -1,3 +1,55 @@
 main{
+    width: 100vw;
+    height: auto;
 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+.area{
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+/*.area::after{
+    content: "";
+    display: block;
+    width: 75%;
+    height: 1px;
+    background: var(--color-background-t);
+    top: 50%; 
+    transform: translate(0, -50%)
+}*/
+
+.degradePreto{
+    width: 100px;
+    height: 100px;
+    background-color: var(--cor-fundo);
+}
+
+/*Hora do SHOW*/
+
+/*Apresetção*/
+.Apresentleft{
+    display: flex;
+    align-items: center;
+}
+
+#maoAberta{
+    width: 70px;
+    height: 70px;
+    fill: var(--cor-letra);
+    transform: rotateZ(330deg);
+
+    animation: shake 3s infinite ease-in-out;
+}
+
+@keyframes shake {
+    50%{
+        transform: rotateZ(320deg);
+    }
+}
+
+
