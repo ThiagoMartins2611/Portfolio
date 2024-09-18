@@ -1,0 +1,13 @@
+footer{
+    width: 100vw;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contentFooter{
+    height: auto;
+    width: 60%;
+    border-top: 1px solid var(--color-activeLetra);
+}

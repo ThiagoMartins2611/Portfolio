@@ -2,6 +2,7 @@ header{
     background-color: var(--cor-fundo);
     width: 100%;
     height: 10%;
+    position: relative;
 }
 
 .Separador{
@@ -19,21 +20,10 @@ header{
     font-size: 150%;
     z-index: 1;
 
-    text-shadow: 0 0 1px rgba(255, 255, 255, 10), /* Brilho suave */
-                 0 0 5px rgba(255, 255, 255, 5), /* Brilho mais intenso */
-                 0 0 10px rgba(255, 255, 255, 1); /* Brilho adicional */
-
+    
     color: var(--cor-letra); /* Cor do texto */
 
     animation: shrine 4s infinite;
-}
-
-@keyframes shrine{
-    50%{
-    text-shadow: 0 0 15px rgba(255, 255, 255, 10), /* Brilho suave */
-                 0 0 20px rgba(255, 255, 255, 5), /* Brilho mais intenso */
-                 0 0 25px rgba(255, 255, 255, 1); /* Brilho adicional */
-    }
 }
 
 
@@ -50,17 +40,19 @@ header{
     display: inline-block;
     cursor: pointer;
     padding-bottom: 2px; /* Reservar espaço para o sublinhado */
-    transition: 0.3s ease-in-out;
-
+    transition: 0.3s;
+    
 }
     
 .navigation a::after{
    content: "";
    display: block;
-   background: white;
+   background: var(--color-activeLetra);
    width: 0%;
-   height: 0.1vh;
+   height: 2px;
+   border-radius: 100%;
    transition: 0.3s;
+   
 }
 
 .navigation a:hover::after{
@@ -69,19 +61,14 @@ header{
 
 
 .navigation a:hover{
-    text-shadow: 0 0 5px rgba(255, 255, 255, 10), /* Brilho suave */
-                 0 0 10px rgba(255, 255, 255, 5), /* Brilho mais intenso */
-                 0 0 15px rgba(255, 255, 255, 1); /* Brilho adicional */
-
+    color: var(--color-activeLetra);
     
-
-    color: var(--cor-letra); /* Cor do texto */
 }
 
 
 .Logos{
     display: flex;
-    gap: 10px;
+    gap: 1vw;
 }
 
 
@@ -136,9 +123,115 @@ ul{
 }
 
 
+.configMob{
+    width: 100%;
+    height: 100vh;
 
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: none;
+    backdrop-filter: blur(10px);
+}
+
+.configsvg{
+    display: none;
+    z-index: 1;
+}
+
+.configsvg svg{
+    fill: white;
+    width: 2em;
+    height: 2em;
+    
+}
+
+.configsvg:hover{
+    cursor: pointer;
+}
+
+
+
+/*tela com 930px*/
 @media screen and (max-width: 930px){
-   
+    
+    .navigation, .Logos{
+        display: none;
+    }
 
+    .Separador{
+        justify-content: space-evenly;
+    }
+
+    .configsvg{
+        display: block;
+    }
+
+    /*barra de navegação mobile*/
+    .configMob{
+        display: none;
+        justify-content: space-evenly;
+    }
+
+    .configMob .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .configMob .Logos{
+        margin: 0;
+        border: 0;
+        padding:0;
+        
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+/*tela com 730px*/
+@media screen and (max-width: 730px){
+   
+    .navigation, .Logos{
+        display: none;
+    }
+
+    .Separador{
+        justify-content: space-between;
+    }
+
+    .configsvg{
+        display: block;
+    }
+
+
+    /*barra de navegação mobile*/
+    .configMob{
+        display: none;
+        justify-content: space-evenly;
+    }
+
+    .configMob .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .configMob .Logos{
+        margin: 0;
+        border: 0;
+        padding:0;
+        gap: 0;
+
+        display: flex;
+        justify-content: center;
+
+    }
 }
 
