@@ -244,3 +244,207 @@ main{
     animation: tremendo 0.1s infinite;
 }
 
+
+
+/*New apresent*/
+
+
+
+
+
+.SolarSystem{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#newSun {
+    width: 20vw;
+    height: 20vw;
+    background-color: var(--color-destaque);
+    border-radius: 100%;
+    box-shadow: 0 0 25px var(--color-destaque);
+    position: relative;
+}
+
+.Desesplosion{
+    transform: scale(9999);
+    z-index: 9999;
+    animation: Desesplosion 5s forwards;
+}
+
+@keyframes Desesplosion {
+    100%{
+        transform: scale(1);
+        z-index: 1;
+    }
+}
+
+
+
+.orbit-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    transform-origin: center;
+    animation: orbit 5s infinite linear; 
+}
+
+#htmlPlanet {
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: 4vw;
+    left: -1.5vw;
+    transform: translateY(-50%);
+}
+
+#cssPlanet{
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: 5vw;
+    left: 22vw;
+    transform: translateY(-50%);
+}
+
+#javaScriptPlanet{
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: 26vw;
+    left: 7vw;
+    transform: translateY(-50%);
+}
+
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#javaScriptPlanet, #cssPlanet, #htmlPlanet{
+    border-radius: 50%;
+}
+
+
+.orbit-trail {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--color-background-t);
+    box-shadow: 0 0 5px var(--color-background-t);
+    pointer-events: none;
+}
+
+
+
+#HTMLOrbit {
+    width: 24vw;
+    height: 24vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#CSSOrbit {
+    width: 28vw;
+    height: 28vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#javaScriptOrbit {
+    width: 32vw;
+    height: 32vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.explosionSolar1{
+    width: 16vw;
+    height: 16vw;
+    background-color: var(--color-destaque);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    animation: explo1 2s infinite;
+}
+
+.explosionSolar2{
+    width: 16vw;
+    height: 16vw;
+    background-color: var(--color-destaque);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    animation: explo2 2s infinite;
+}
+
+@keyframes explo1 {
+    50%{
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    
+}
+
+
+@keyframes explo2 {
+    50%{
+        transform: translate(-50%, -50%) rotate(45deg) scale(0.8);
+    }
+    
+}
+
+
+
+@media screen and (max-width: 930px){
+    #Apresent{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #newSun, #sun {
+        margin-top: 9vw;
+        margin-bottom: 9vw;
+    }
+}
+
+
+.Universe {
+    font-weight: bold;
+    background: linear-gradient(to right, #000428, #004e92, #6a0572, #a4508b, #ffcc70);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    background-size: 300% 100%; /* Aumenta o tamanho do gradiente */
+  
+    animation: universe 6s ease-in-out infinite;  /* Transição suave com easing */
+}
+
+@keyframes universe {
+    0% {
+        background-position-x: 0%;
+    }
+    50% {
+        background-position-x: 100%; /* Gradiente atinge o meio */
+    }
+    100% {
+        background-position-x: 0%; /* Volta ao início */
+    }
+}

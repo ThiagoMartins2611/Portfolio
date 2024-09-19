@@ -3,13 +3,22 @@ let sun = document.querySelector('#sun');
 let maoEsquerda = document.querySelector("#maoAberta");
 let maoDireita = document.querySelector('.maoSol');
 let pegada = document.querySelector('.pegada');
+let SolarSystem = document.querySelector('.SolarSystem');
+let ChangeWord = document.querySelector('#ChangeWord');
+let star = document.getElementsByClassName('star');
 
 let blockClick = 0;
 
-sun.onclick = () =>{
+sun.onmousedown = () => {
+    if(blockClick == 0){
+    sun.style.transform = 'scale(2)';
+    }
+}
+
+sun.onmouseup = () =>{
 
     if(blockClick == 0){
-
+        sun.style.transform = 'scale(1)';
         sun.textContent = ""
 
         function MaoSome(){
@@ -54,6 +63,21 @@ sun.onclick = () =>{
             pegada.style.display = 'none';
         }
         setTimeout(handSome, 12000)
+
+        
+        function RetornOfSun(){
+            SolarSystem.style.display = 'flex'
+            sun.style.display = 'none'
+            ChangeWord.className = 'Universe'
+            star[0].style.display = 'block'
+            star[1].style.display = 'block'
+            star[2].style.display = 'block'
+
+        }
+        setTimeout(RetornOfSun, 13000)
+
+
+
 
         blockClick++;
     }

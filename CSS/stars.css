@@ -576,6 +576,7 @@
 
 .star{
     border-radius: 50%;
+    display: none;
 }
 
 @keyframes animStar {
