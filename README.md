@@ -14,8 +14,9 @@ CSS: Estilização e design responsivo.
 
 JavaScript: Interatividade e manipulação do DOM.
 
-Experiência Acadêmica:
 
+
+Experiência Acadêmica:
 IFMS – Curso Técnico Integrado em informatica para internet
 Período: 2023 – 2026
 
