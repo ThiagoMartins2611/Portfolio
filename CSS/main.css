@@ -408,17 +408,116 @@ main{
 
 
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 630px){
     #Apresent{
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: space-evenly;
     }
 
-    #newSun, #sun {
-        margin-top: 9vw;
-        margin-bottom: 9vw;
+    #newSun{
+        width: 50vw;
+        height: 50vw;
     }
+
+    .explosionSolar1{
+        width: 40vw;
+        height: 40vw;
+        background-color: var(--color-destaque);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        animation: explo1 2s infinite;
+    }
+    
+    .explosionSolar2{
+        width: 40vw;
+        height: 40vw;
+        background-color: var(--color-destaque);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    
+        animation: explo2 2s infinite;
+    }
+
+    @keyframes explo1 {
+        50%{
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+        
+    }
+    
+    @keyframes explo2 {
+        50%{
+            transform: translate(-50%, -50%) rotate(45deg) scale(0.8);
+        }
+        
+    }
+
+
+    #javaScriptPlanet, #cssPlanet, #htmlPlanet{
+        border-radius: 50%;
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+    }
+
+
+    #htmlPlanet {
+  
+        top: 4vw;
+        left: -2.5vw;
+        transform: translateY(-50%);
+    }
+    
+    #cssPlanet{
+        
+        top: 5vw;
+        left: 52vw;
+        transform: translateY(-50%);
+    }
+    
+    #javaScriptPlanet{
+        
+        top: 67vw;
+        left: 7vw;
+        transform: translateY(-50%);
+    }
+    
+
+
+    
+    #HTMLOrbit {
+    width: 65vw;
+    height: 65vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }   
+
+
+    #CSSOrbit {
+    width: 75vw;
+    height: 75vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+
+    #javaScriptOrbit {
+    width: 85vw;
+    height: 85vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
 }
 
 
@@ -444,4 +543,13 @@ main{
     100% {
         background-position-x: 0%; /* Volta ao início */
     }
+}
+
+
+
+
+
+/* Tamanhos */
+.area{
+    height: 90vh;
 }

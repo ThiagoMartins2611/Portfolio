@@ -76,6 +76,9 @@ sun.onmouseup = () =>{
             ChangeWord.textContent = "";
             ChangeWord.textContent = "Universe";
 
+            maoEsquerda.id = 'maoAberta';
+            
+
         }
         setTimeout(RetornOfSun, 13000)
 
