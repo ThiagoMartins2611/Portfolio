@@ -295,27 +295,21 @@ main{
 }
 
 #htmlPlanet {
-    width: 4vw;
-    height: 4vw;
-    position: absolute;
+  
     top: 4vw;
     left: -1.5vw;
     transform: translateY(-50%);
 }
 
 #cssPlanet{
-    width: 4vw;
-    height: 4vw;
-    position: absolute;
+    
     top: 5vw;
     left: 22vw;
     transform: translateY(-50%);
 }
 
 #javaScriptPlanet{
-    width: 4vw;
-    height: 4vw;
-    position: absolute;
+    
     top: 26vw;
     left: 7vw;
     transform: translateY(-50%);
@@ -330,6 +324,9 @@ main{
 
 #javaScriptPlanet, #cssPlanet, #htmlPlanet{
     border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
 }
 
 

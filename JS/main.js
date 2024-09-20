@@ -73,6 +73,9 @@ sun.onmouseup = () =>{
             star[1].style.display = 'block'
             star[2].style.display = 'block'
 
+            ChangeWord.textContent = "";
+            ChangeWord.textContent = "Universe";
+
         }
         setTimeout(RetornOfSun, 13000)
 
