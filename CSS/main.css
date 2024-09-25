@@ -5,23 +5,17 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    margin-top: 10vh;
 }
 
 .area{
     width: 100vw;
     height: auto;
     position: relative;
+    height: 90vh;
 }
 
-/*.area::after{
-    content: "";
-    display: block;
-    width: 75%;
-    height: 1px;
-    background: var(--color-background-t);
-    top: 50%; 
-    transform: translate(0, -50%)
-}*/
 
 .degradePreto{
     width: 100px;
@@ -547,9 +541,3 @@ main{
 
 
 
-
-
-/* Tamanhos */
-.area{
-    height: 90vh;
-}

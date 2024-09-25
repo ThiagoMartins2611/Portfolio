@@ -2,6 +2,9 @@ let configSvg = document.querySelector('.configsvg');
 let configMob = document.querySelector('.configMob');
 
 
+
+
+
 configSvg.onclick = () => {
 
     if(configMob.style.display == 'flex'){
@@ -14,7 +17,7 @@ configSvg.onclick = () => {
     }else{
 
         configMob.style.display = 'flex';
-
+        
 
         configSvg.innerHTML = `<svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 460.775 460.775" xml:space="preserve">
