@@ -21,6 +21,7 @@ header{
 
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
+    background-color: var(--cor-fundo);
 }
 
 .title{

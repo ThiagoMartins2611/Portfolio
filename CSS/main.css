@@ -13,7 +13,8 @@ main{
     width: 100vw;
     height: auto;
     position: relative;
-    height: 90vh;
+    border-bottom: 2px solid var(--color-background-t);
+    height: 100vh;
 }
 
 
@@ -31,6 +32,7 @@ main{
     width: 100%;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .Apresentleft{
@@ -541,3 +543,80 @@ main{
 
 
 
+/*Sobre Mim*/
+
+#SobreMim{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+
+.SobreMimLeft, .fotoPerfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#photoMe{
+    width: 25vw;
+    z-index: 1;
+    border-radius: 100% 100% 100% 100%;
+    transform: scale(1) scaleX(0.01);
+    transition: 0.3s;
+}
+
+#photoMe:hover{
+    cursor: pointer;
+
+    transform: scale(1.1);
+}
+
+
+
+
+.SobreMimRigth{
+    width: 30em;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
+
+
+@media screen and (max-width: 730px){
+    #SobreMim{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: none;
+        gap: 40px;
+    }
+
+    #photoMe{
+         height: 50vh;
+        width: auto;
+    }
+
+    .SobreMimText{
+        font-size: 2.5vw;
+        width: 80vw;
+    }
+
+    .SobreMimRigth{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+}
