@@ -620,3 +620,81 @@ main{
     }
     
 }
+
+
+/*Conhsecimentos*/
+
+#Conhecimentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    height: auto;
+}
+
+#Conhecimentos h1{
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+.contentConhecimentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding-bottom: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    gap: 30px;
+}
+
+.cardC{
+    width: 16em;
+    height: 20em;
+    border: 3px solid var(--cor-letra);
+    border-radius: 10px;
+
+    filter: contrast(0.0001) brightness(0.3);
+    transition: 0.5s;
+}
+
+.cardC:hover{
+    filter: contrast(1) brightness(1);
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: var(--color-background-t);
+}
+
+.contentC{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+
+    justify-content: space-evenly;
+
+}
+
+
+.logoC img{
+    width: 150px;
+    height: 150px;
+}
+
+.textoC{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.descricaoC{
+    text-align: center;
+    
+}

@@ -9,6 +9,8 @@ let star = document.getElementsByClassName('star');
 
 let blockClick = 0;
 
+// sun animation
+
 sun.onmousedown = () => {
     if(blockClick == 0){
     sun.style.transform = 'scale(2)';
@@ -90,3 +92,64 @@ sun.onmouseup = () =>{
 
     
 }
+
+// conhecimentos list
+
+function listarConhecimentos(){
+
+    fetch('./JSON/conhecimentos.json')
+    .then(response => response.json())
+    .then(conhecimentos => {
+
+        const contentConhecimento = document.querySelector('.contentConhecimentos');
+
+        conhecimentos.map(conhecimento => {
+
+            const cardC = document.createElement('div');
+            cardC.className = 'cardC';
+
+            const contentC = document.createElement('div');
+            contentC.className = 'contentC';
+
+            const logoC = document.createElement('div');
+            logoC.className = 'logoC';
+            const img = document.createElement('img');
+            img.src = conhecimento.logo;
+            img.alt = conhecimento.nome;
+            
+
+            const textoC = document.createElement('div');
+            textoC.className = 'textoC'
+
+            const tituloC = document.createElement('div');
+            tituloC.className = 'tituloC'
+            const h2 = document.createElement('h2');
+
+            h2.innerText = conhecimento.nome;
+
+            const descricaoC = document.createElement('div');
+            descricaoC.className = "descricaoC";
+            const p = document.createElement('p');
+
+            p.innerText = conhecimento.descricao;
+
+
+            logoC.appendChild(img);
+            tituloC.appendChild(h2);
+            textoC.appendChild(tituloC);
+            descricaoC.appendChild(p);
+            textoC.appendChild(descricaoC);
+
+            contentC.appendChild(logoC);
+            contentC.appendChild(textoC);
+
+            cardC.appendChild(contentC);
+
+            contentConhecimento.appendChild(cardC);
+        
+        })
+    })
+
+}
+
+listarConhecimentos();

@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "HTML5",
+        "logo": "./imagens/simbolosOrbitais/icons8-html-logo.svg",
+        "descricao": "HTML estrutura o conteúdo de páginas web."
+
+    },
+
+    {
+        "nome": "CSS3",
+        "logo": "./imagens/simbolosOrbitais/icons8-css-logo.svg",
+        "descricao": "CSS estiliza a aparência de elementos web."
+    },
+
+    {
+        "nome": "JavaScript",
+        "logo": "./imagens/simbolosOrbitais/icons8-javascript-logo (1).svg",
+        "descricao": "JavaScript adiciona interatividade e dinâmica a páginas web."
+    },
+
+    {
+        "nome": "C# da Unity",
+        "logo": "./imagens/c-sharpLogo.svg",
+        "descricao": "C# é usada para desenvolver aplicativos e jogos na plataforma .NET."
+    }
+]
