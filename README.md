@@ -1,5 +1,5 @@
 
-# Portifoli
+# Portifólio
 
 Thiago Costa Martins
 Estudante de Curso Técnico Integrado
@@ -20,7 +20,7 @@ Experiência Acadêmica:
 IFMS – Curso Técnico Integrado em informatica para internet
 Período: 2023 – 2026
 
-link do portifoli: https://thiagomartins2611.github.io/Portifoli/
+link do portifólio: https://thiagomartins2611.github.io/Portifoli/
 
 ## Autores
 
