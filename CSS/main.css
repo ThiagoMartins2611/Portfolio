@@ -99,9 +99,9 @@ main{
 
     animation: shrine 4s infinite;
     z-index: 1;
-    
-    
 }
+
+
 
 #sun:hover{
     transform: scale(1.2);

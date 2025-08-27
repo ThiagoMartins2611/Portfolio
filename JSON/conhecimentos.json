@@ -19,8 +19,23 @@
     },
 
     {
+        "nome":"React",
+        "logo": "./imagens/react-svgrepo-com.svg",
+        "descricao": "Biblioteca JavaScript para interfaces web dinâmicas."
+    },
+
+    {
         "nome": "C# da Unity",
         "logo": "./imagens/c-sharpLogo.svg",
         "descricao": "C# é usada para desenvolver aplicativos e jogos na plataforma .NET."
+    },
+
+    {
+        "nome":"Unity",
+        "logo": "./imagens/unity-svgrepo-com.svg",
+        "descricao": "Engine usada para criar jogos e experiências interativas."
     }
+
+
+    
 ]
