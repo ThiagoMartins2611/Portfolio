@@ -95,15 +95,16 @@ sun.onmouseup = () =>{
 
 // conhecimentos list
 
-function listarConhecimentos(){
+async function listarConhecimentos(){
 
-    fetch('./JSON/conhecimentos.json')
-    .then(response => response.json())
-    .then(conhecimentos => {
+    try {
+        
+    const res = await fetch('./JSON/conhecimentos.json')
+    const data = await res.json()
 
         const contentConhecimento = document.querySelector('.contentConhecimentos');
 
-        conhecimentos.map(conhecimento => {
+        data.map(conhecimento => {
 
             const cardC = document.createElement('div');
             cardC.className = 'cardC';
@@ -148,8 +149,16 @@ function listarConhecimentos(){
             contentConhecimento.appendChild(cardC);
         
         })
-    })
+
+
+    } catch (error) {
+        console.log("erro ao encontrar o documento contendo os conhecimentos", error)
+    }
+   
 
 }
+
+//projetos list
+
 
 listarConhecimentos();
