@@ -584,6 +584,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align:left;
     gap: 2vh;
 }
 
@@ -597,6 +598,7 @@ main{
         align-items: center;
         justify-content: none;
         gap: 40px;
+
     }
 
     #photoMe{
@@ -627,7 +629,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     flex-direction: column;
 
     height: auto;
@@ -656,7 +658,7 @@ main{
     border: 3px solid var(--cor-letra);
     border-radius: 10px;
 
-    filter: contrast(0.0001) brightness(0.3);
+    filter: contrast(0.01) brightness(0.5);
     transition: 0.5s;
 }
 
@@ -695,5 +697,6 @@ main{
 
 .descricaoC{
     text-align: center;
+    padding: 5px;
     
 }
