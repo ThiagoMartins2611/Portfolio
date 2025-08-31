@@ -158,7 +158,21 @@ async function listarConhecimentos(){
 
 }
 
-//projetos list
-
-
 listarConhecimentos();
+
+//listar projetos
+
+async function listarProjetos() {
+    try {
+
+        const res = await fetch('./JSON/projetos.json');
+        const data = await res.json();
+
+        console.log(data)
+
+    } catch (error) {
+        console.log("erro ao tentar acessar aquivo JSON dos projetos")
+    }
+}
+
+listarProjetos()
