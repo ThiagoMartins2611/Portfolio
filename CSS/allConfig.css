@@ -28,7 +28,10 @@ html, body{
 
 html{
     overflow-y: hidden;
+    scroll-behavior: smooth;
 }
+  
+
 
 body{
     display: flex;

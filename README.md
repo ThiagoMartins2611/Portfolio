@@ -4,21 +4,29 @@
 Thiago Costa Martins
 Estudante de Curso Técnico Integrado
 
-Resumo Acadêmico: Estudante no curso técnico integrado, com formação em Informatica para internet. Desenvolvendo habilidades em HTML, CSS e JavaScript e aplicando conhecimentos em projetos acadêmicos e atividades práticas.
+Sou acadêmico de Análise e Desenvolvimento de Sistemas no IFMS - Campus Naviraí, com formação prévia em Informática para Internet. Desenvolvedor focado no ecossistema JavaScript, busco criar soluções eficientes tanto no Front-end quanto no Back-end, sempre focado em evoluir como Full Stack.
 
-Competências Técnicas:
+🚀 Sobre Mim
 
-HTML: Estruturação de páginas web.
-
-CSS: Estilização e design responsivo.
-
-JavaScript: Interatividade e manipulação do DOM.
-Experiência Acadêmica:
+Atualmente, curso graduação e dedico meus estudos ao aprofundamento em frameworks modernos. Tenho experiência prática na construção de interfaces responsivas e APIs, unindo a base técnica acadêmica com projetos que desafiam minhas habilidades de resolução de problemas.
 
 
+🛠️ Competências Técnicas
+Linguagens: HTML5, CSS3, JavaScript (ES6+)
 
-IFMS – Curso Técnico Integrado em informatica para internet
-Período: 2023 – 2026
+Front-end: React, Tailwind CSS
+
+Back-end: Node.js (Express, Fastify)
+
+Mobile: React Native
+
+Ferramentas: Git, GitHub, Manipulação de DOM
+
+
+🎓 Formação Acadêmica
+Superior: Tecnologia em Análise e Desenvolvimento de Sistemas (ADS) – IFMS, Campus Naviraí.
+
+Técnico: Informática para Internet – IFMS, Campus Naviraí (Concluído).
 
 link do portfólio: https://thiagomartins2611.github.io/Portfolio/
 
