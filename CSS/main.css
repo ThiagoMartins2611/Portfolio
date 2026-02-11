@@ -677,16 +677,17 @@ main{
     height: 20em;
     border: 3px solid var(--cor-letra);
     border-radius: 10px;
-
+    background-color: var(--color-background-t);
     filter: contrast(0.01) brightness(0.5);
-    transition: 0.5s;
+    filter: contrast(1) brightness(1);
+    transition: 0.3s;
 }
 
 .cardC:hover{
-    filter: contrast(1) brightness(1);
+    
     cursor: pointer;
     transform: scale(1.1);
-    background-color: var(--color-background-t);
+    
 }
 
 .contentC{
@@ -720,3 +721,190 @@ main{
     padding: 5px;
     
 }
+
+
+/* Projetos */
+
+
+
+#Projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+#Projetos h1 {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+
+.contentProjetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding-bottom: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    gap: 30px;
+}
+
+
+.cardP {
+    width: 20em; 
+    height: 25em; 
+    border: 3px solid var(--cor-letra);
+    border-radius: 10px;
+    
+    overflow: hidden; 
+    transition: 0.3s;
+}
+
+.cardP:hover {
+  
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: var(--color-background-t);
+    
+}
+
+
+.contentP {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+.logoP img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover; 
+    border-bottom: 1px solid var(--cor-letra);
+}
+
+.textoP {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.tituloP h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.descricaoP {
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+
+.btnProjeto {
+    text-decoration: none;
+    color: var(--cor-letra);
+    border: 1px solid var(--cor-letra);
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btnProjeto:hover {
+    background-color: var(--cor-letra);
+    color: var(--color-background); 
+}
+
+
+/* CONTATOS */
+
+#Contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+#Contatos h1 {
+    margin-top: 7vh;
+}
+
+.contentContatos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.vibraCell{
+    width: 50%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#Cell{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    transform: perspective(1000px) rotateY(0deg) rotateZ(0deg);
+
+}
+
+
+
+.formasDeContato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;  
+}
+
+
+
+#Telefone{
+    width: 100px;
+    height: auto;
+    position: absolute;
+
+    z-index: 2;
+
+    animation: balanco 5s infinite;
+    
+}
+
+#Instag{
+    fill: var(--cor-letra);
+}
+
+
+.forma{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.forma:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.LogoCont{
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+

@@ -2,8 +2,15 @@
     {
         "gif":"./imagens/gif/tictactoe.gif",
         "titulo": "Tic Tac Toe",
-        "descricao": "O classico jogo da velha online!",
+        "descricao": "O classico jogo da velha! Feito com HTML, CSS e JavaScript puro, jogue contra um amigo no mesmo PC",
         "link": "https://tic-tac-toe-b1hu.onrender.com/"
+    },
+
+    {
+        "gif":"./imagens/gif/chess.gif",
+        "titulo": "Xadrez",
+        "descricao": "Jogo de xadrez online, jogue contra um amigo no mesmo PC! Feito com HTML, CSS e JavaScript puro.",
+        "link": "https://chess-c5l2.onrender.com/"
     }
 
 ]

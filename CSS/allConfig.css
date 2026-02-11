@@ -28,7 +28,6 @@ html, body{
 
 html{
     overflow-y: hidden;
-    scroll-behavior: smooth;
 }
   
 
@@ -37,8 +36,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 ::-webkit-scrollbar{

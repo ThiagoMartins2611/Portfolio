@@ -164,15 +164,62 @@ listarConhecimentos();
 
 async function listarProjetos() {
     try {
-
         const res = await fetch('./JSON/projetos.json');
         const data = await res.json();
 
-        console.log(data)
+        const contentProjetos = document.querySelector('.contentProjetos');
+
+        data.map(projeto => {
+           
+            const cardP = document.createElement('div');
+            cardP.className = 'cardP';
+
+            
+            const logoP = document.createElement('div');
+            logoP.className = 'logoP';
+            const img = document.createElement('img');
+            img.src = projeto.gif;
+            img.alt = projeto.titulo;
+
+            
+            const textoP = document.createElement('div');
+            textoP.className = 'textoP';
+
+            const tituloP = document.createElement('div');
+            tituloP.className = 'tituloP';
+            const h2 = document.createElement('h2');
+            h2.innerText = projeto.titulo;
+
+            const descricaoP = document.createElement('div');
+            descricaoP.className = "descricaoP";
+            const p = document.createElement('p');
+            p.innerText = projeto.descricao;
+
+            
+            const linkP = document.createElement('a');
+            linkP.href = projeto.link;
+            linkP.target = "_blank";
+            linkP.className = "btnProjeto";
+            linkP.innerText = "Visualizar Projeto";
+
+            
+            logoP.appendChild(img);
+            tituloP.appendChild(h2);
+            descricaoP.appendChild(p);
+            
+            textoP.appendChild(tituloP);
+            textoP.appendChild(descricaoP);
+            textoP.appendChild(linkP);
+
+            cardP.appendChild(logoP);
+            cardP.appendChild(textoP);
+
+            contentProjetos.appendChild(cardP);
+        });
 
     } catch (error) {
-        console.log("erro ao tentar acessar aquivo JSON dos projetos")
+        console.log("Erro ao tentar acessar arquivo dos projetos", error);
     }
 }
 
-listarProjetos()
+listarProjetos();
