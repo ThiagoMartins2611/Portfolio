@@ -841,9 +841,10 @@ main{
 }
 
 .contentContatos{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    justify-content: center;
 }
 
 .vibraCell{
@@ -855,7 +856,7 @@ main{
 }
 
 #Cell{
-    width: 600px;
+    width: 400px;
     height: 500px;
     position: relative;
     transform: perspective(1000px) rotateY(0deg) rotateZ(0deg);
@@ -863,12 +864,14 @@ main{
 }
 
 
-
 .formasDeContato{
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     gap: 20px;  
+    margin-bottom: 50px;
 }
 
 
@@ -878,7 +881,7 @@ main{
     height: auto;
     position: absolute;
 
-    z-index: 2;
+    z-index: 1;
 
     animation: balanco 5s infinite;
     
@@ -906,5 +909,30 @@ main{
     position: relative;
     width: 35px;
     height: 35px;
+    flex-shrink: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .vibraCell, .formasDeContato {
+        width: 100%; 
+    }
+
+    .vibraCell {
+        margin-bottom: 50px; 
+        margin-top: 50px;
+    }
+
+    .formasDeContato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Cell {
+        width: 100%;   
+        height: auto;
+        max-width: 300px; 
+    }
 }
 
