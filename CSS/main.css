@@ -855,6 +855,7 @@ main{
     align-items: center;
 }
 
+
 #Cell{
     width: 400px;
     height: 500px;
@@ -919,7 +920,7 @@ main{
         width: 100%; 
     }
 
-    .vibraCell {
+    .astroHead{
         margin-bottom: 50px; 
         margin-top: 50px;
     }
@@ -934,5 +935,140 @@ main{
         height: auto;
         max-width: 300px; 
     }
+}
+
+
+
+.partes{
+    background-color: white;
+}
+
+.basesDoCelular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bases{
+    width: 220px;
+    height: 15px;
+    border-radius: 20%;
+
+}
+
+.bases.encima{
+    transform: translateY(54px) rotateX(-90deg);
+}
+
+.bases.debaixo{
+    transform: translateY(-54px) rotateX(90deg);
+}
+
+
+
+:root {
+  --w: 220px; 
+  --h: 220px;
+  --z: 110px; 
+}
+
+
+.astroHead{
+  perspective: 1200px;
+  width: 60%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+#cabecaCompleta{
+  width: var(--w);
+  height: var(--h);
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  
+  align-items: center;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, #323232, #0f0f0f);
+  border: 1px solid #353535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: visible;
+
+}
+
+
+.front{ 
+    transform: translateZ(var(--z)); 
+}
+
+.back{ 
+    transform: rotateY(180deg) translateZ(var(--z)); 
+}
+
+.right{ 
+    width: calc(var(--z) * 2); right: calc(var(--z) * -1); transform: rotateY(90deg); 
+}
+
+.left{ 
+    width: calc(var(--z) * 2); left: calc(var(--z) * -1); transform: rotateY(-90deg); 
+}
+
+.top { 
+    height: calc(var(--z) * 2); top: calc(var(--z) * -1); transform: rotateX(90deg); 
+}
+
+.bottom{ 
+    height: calc(var(--z) * 2); bottom: calc(var(--z) * -1); transform: rotateX(-90deg); 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .astroHead{ transform: scale(0.7); height: 400px; }
+}
+
+
+
+.tela{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pelicula{
+    width: 75%;
+    height: 75%;
+   
+    border-radius: 10px;
+ 
+
+    background:  radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 30%),
+    linear-gradient(135deg, rgba(200, 230, 255, 0.3) 0%, rgba(100, 150, 200, 0.2) 100%);
+
+    box-shadow: 
+    inset 0 0 25px rgba(255, 255, 255, 0.3), 
+    inset 0 10px 10px rgba(255, 255, 255, 0.2), 
+    0 10px 30px rgba(0, 0, 0, 0.1); 
+
+  
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    
 }
 

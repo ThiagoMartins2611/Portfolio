@@ -1,16 +1,21 @@
-const cell = document.getElementById("Cell");
-const telefone = document.getElementById("Telefone");
+const card = document.getElementById('cabecaCompleta');
+const container = document.querySelector('.astroHead');
 
-window.addEventListener("mousemove", (event) => {
+document.addEventListener('mousemove', (e) => {
+    
+    const { width, height, left, top } = container.getBoundingClientRect();
+
+    const centerX = left + width / 2;
+    const centerY = top + height / 2;
+
+    const mouseX = (e.clientX - centerX) / (width / 2);
+    const mouseY = (e.clientY - centerY) / (height / 2);
+
+    const rotateX = mouseY * -25; 
+    const rotateY = mouseX * 25;
+    
    
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-
-    
-    const rotateY = ((event.clientX / width) - 0.5) * 50; 
-    const rotateX = ((event.clientY / height) - 0.5) * -50;
-
-    
-    cell.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    telefone.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 });
+
+
