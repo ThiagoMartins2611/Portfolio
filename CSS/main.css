@@ -981,12 +981,16 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   z-index: 1;
 }
 
 .astroHead:hover .face {
   cursor: pointer;
 }
+
+
+
 
 #cabecaCompleta{
   width: var(--w);
@@ -1102,4 +1106,42 @@ main{
 
 
     border-radius: 50%;
+}
+
+
+
+#reaction{
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    opacity: 0;
+}
+
+
+.react{
+    width: 60px;
+    height: 60px;
+}
+
+.react.desativado{
+    display: none;
+    transform: translateX(0px) translateY(0px);
+}
+
+.react.ativo{
+    display: block;
+    animation: reactAnim 1s forwards;
+}
+
+@keyframes reactAnim {
+    0%{
+        transform: scale(0.1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 0;
+        transform: translateX(160px) translateY(-60px);
+    }
 }

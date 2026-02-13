@@ -7,12 +7,20 @@ const pupila = document.getElementsByClassName('pupila');
 const arrayOlhos = Array.from(olhos);
 const arrayPupilas = Array.from(pupila);
 
+const joinha = document.getElementById('joinha');
+
 let mouseDown = false;
+let mouseOverInstagram = false;
+let mouseOverEmail = false;
+
+
+const opEmail = document.getElementById('email');
+const opInstagram = document.getElementById('instag');
 
 
 function faceFeliz(){
 
-    if(mouseDown){
+    if(mouseDown || mouseOverInstagram){
         arrayOlhos.forEach(olho => {
             olho.className = 'olho feliz';
         });
@@ -35,6 +43,15 @@ function resetarFace(){
     });
 }
 
+function reactAtivar(){
+    if(mouseOverEmail){
+        joinha.className = 'react ativo';
+    }
+}
+
+function reactDesativar(){
+    joinha.style.className = 'react desativo';
+}
 
 document.addEventListener('mousemove', (e) => {
     
@@ -74,5 +91,30 @@ document.addEventListener('mouseup', () => {
     resetarFace();
 });
 
+
+
+
+
+opEmail.addEventListener('mouseover', () => {
+    mouseOverEmail = true;
+    reactAtivar();
+});
+
+opEmail.addEventListener('mouseout', () => {
+    mouseOverEmail = false;
+    reactDesativar();
+});
+
+
+
+opInstagram.addEventListener('mouseover', () => {
+    mouseOverInstagram = true;
+    faceFeliz();
+});
+
+opInstagram.addEventListener('mouseout', () => {
+    mouseOverInstagram = false;
+    resetarFace();
+});
 
 
