@@ -984,6 +984,10 @@ main{
   z-index: 1;
 }
 
+.astroHead:hover .face {
+  cursor: pointer;
+}
+
 #cabecaCompleta{
   width: var(--w);
   height: var(--h);
@@ -993,6 +997,8 @@ main{
   
   align-items: center;
 }
+
+
 
 .face {
   position: absolute;
@@ -1041,16 +1047,6 @@ main{
 
 
 
-.tela{
-    width: 100%;
-    height: 100%;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .olhos{
     display: flex;
     justify-content: space-around;
@@ -1079,11 +1075,31 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
+
+    transition: 0.1s ease;
 }
 
 .pupila{
-    width: 20px;
-    height: 30px;
+    width: 25px;
+    height: 35px;
     background-color: black;
     position: absolute;
+}
+
+
+.olho.feliz{
+
+
+
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+    border-top: 4px solid white;
+
+
+    border-radius: 50%;
 }
